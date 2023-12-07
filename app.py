@@ -4,7 +4,7 @@ from clf import predict
 
 st.set_option('deprecation.file_uploader_encoding', False)
 
-st.title("Dehao's Simple Image Classification App")
+st.title("Image Classification App")
 st.write("")
 
 file_up = st.file_uploader("Upload an image", type="jpg")
