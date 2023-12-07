@@ -10,7 +10,7 @@ st.title("Image Classification App")
 st.write("")
 
 file_up = st.file_uploader("Upload an image", type="jpg")
-text_io = io.TextIOWrapper(file_up)
+
 
 if file_up is not None:
     image = Image.open(file_up)
