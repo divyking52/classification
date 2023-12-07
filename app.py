@@ -2,7 +2,8 @@ import streamlit as st
 from PIL import Image
 from clf import predict
 
-st.set_option('deprecation.file_uploader_encoding', False)
+# Suppress file uploader encoding warning
+st.set_option('deprecation.showfileUploaderEncoding', False)
 
 st.title("Image Classification App")
 st.write("")
