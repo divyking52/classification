@@ -1,14 +1,16 @@
 import streamlit as st
 from PIL import Image
 from clf import predict
+import io
 
 # Suppress file uploader encoding warning
-st.set_option('deprecation.showfileUploaderEncoding', False)
+
 
 st.title("Image Classification App")
 st.write("")
 
 file_up = st.file_uploader("Upload an image", type="jpg")
+text_io = io.TextIOWrapper(file_up)
 
 if file_up is not None:
     image = Image.open(file_up)
