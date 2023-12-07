@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 from clf import predict
 
-st.set_option('deprecation.showfileUploaderEncoding', False)
+st.set_option('deprecation.file_uploader_encoding', False)
 
 st.title("Dehao's Simple Image Classification App")
 st.write("")
